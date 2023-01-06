@@ -1,0 +1,225 @@
+<style>
+    .button_request{
+        background-color: black;
+        color: white;
+        height: 36px;
+        width: 105px;
+        border: solid;
+        margin-right: 50px;
+        margin-left: 30px;
+        transition: opacity 0.15s,
+                    box-shadow 0.15s,
+                    background-color 0.15s,
+                    color 0.15s;
+    }
+    .button_request:hover{
+        opacity: 0.7;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        background-color: white;
+        color: black;
+    }
+    .button_request:active{
+        opacity: 0.4;
+    }
+    
+    .button_cart{
+        background-color:rgb(255, 216, 20);
+        color:black;
+        height: 36px;
+        width: 120px;
+        border: none;
+        border-radius: 18px;
+        margin-right: 50px;
+        transition: opacity 0.15s,
+                    box-shadow 0.15s;
+    }
+    .button_cart:hover{
+        opacity: 0.7;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    }
+    .button_cart:active{
+        opacity: 0.4;
+    }
+    .button_signup{
+        background-color:rgb(46, 164, 79);
+        color:white;
+        height: 36px;
+        width: 105px;
+        border: none;
+        border-radius: 4px;
+        transition: opacity 0.15s,
+                    box-shadow 0.15s,
+                    background-color 0.15s,
+                    color 0.15s;
+    }
+    .button_signup:hover{
+        opacity: 0.7;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        background-color: white;
+        color:rgb(46, 164, 79);
+    }
+    .button_signup:active{
+        opacity: 0.4;
+    }
+    .button_getstarted{
+        background-color:rgb(121, 82, 179);
+        color: white;
+        height: 36px;
+        width: 105px;
+        border: none;
+        border-radius: 4px;
+        margin-right: 20px;
+        margin-left: 30px;
+        transition: opacity 0.15s,
+                    box-shadow 0.15s,
+                    background-color 0.15s,
+                    color 0.15s;
+    }
+    .button_getstarted:hover{
+        opacity: 0.7;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        background-color: white;
+        color: rgb(121, 82, 179);
+    }
+    .button_getstarted:active{
+        opacity: 0.4;
+    }
+    .button_download{
+        background-color:rgb(203, 207, 210);
+        color:rgb(108, 117, 125);
+        height: 36px;
+        width: 120px;
+        border: none;
+        border-radius: 4px;
+        border-right: 30px;
+        transition: opacity 0.15s,
+                    box-shadow 0.15s;    
+    }
+    .button_download:hover{
+        opacity: 0.7;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    }
+    .button_download:active{
+        opacity: 0.4;
+    }
+    .button_apply{
+        background-color:rgb(10, 102, 194);
+        color:white;
+        height: 36px;
+        width: 220px;
+        border: none;
+        border-radius: 18px;
+        margin-right: 20px;
+        margin-left: 70px;
+        transition: opacity 0.15s,
+                    box-shadow 0.15s,
+                    background-color 0.15s,
+                    color 0.15s;
+    }
+    .button_apply:hover{
+        opacity: 0.7;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        background-color: white;
+        color: rgb(10, 102, 194);
+    }
+    .button_apply:active{
+        opacity: 0.4;
+    }
+    .button_save{
+        background-color: white;
+        border-color:rgb(10, 102, 194);
+        color:rgb(10, 102, 194);
+        height: 36px;
+        width: 120px;
+        border: solid;
+        border-radius: 18px;
+        transition: opacity 0.15s,
+                    box-shadow 0.15s,
+                    background-color 0.15s,
+                    color 0.15s;
+    }
+    .button_save:hover{
+        opacity: 1;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        background-color: rgb(10, 102, 194);
+        color: white;
+    }
+    .button_save:active{
+        opacity: 0.4;
+    }
+    .button_a_cart{
+        background-color:rgb(255, 216, 20);
+        color:black;
+        height: 36px;
+        width: 120px;
+        border: none;
+        border-radius: 18px;
+        margin-right: 10px;
+        transition: opacity 0.15s,
+                    box-shadow 0.15s;
+    }
+    .button_a_cart:hover{
+        opacity: 0.7;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    }
+    .button_a_cart:active{
+        opacity: 0.4;
+    }
+    .button_buy{
+        background-color:rgb(255, 164, 28);
+        color:black;
+        height: 36px;
+        width: 120px;
+        border: none;
+        border-radius: 18px;
+        transition: opacity 0.15s,
+                    box-shadow 0.15s;
+    } 
+    .button_buy:hover{
+        opacity: 0.7;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    }
+    .button_buy:active{
+        opacity: 0.4;
+    }
+    .back_to_amazon{
+        color:rgb(24, 226, 209);
+        transition: opacity 0.15s,
+                    box-shadow 0.15s;
+    }
+    .back_to_amazon:hover{
+        opacity: 0.7;
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    }
+    .back_to_amazon:active{
+        opacity: 0.4;
+    }   
+</style>
+<br>
+<br>
+<button class="button_request">Request now</button>
+<button class="button_cart">Add to Cart</button>
+<button class="button_signup">Sign up</button>
+<br>
+<br>
+<br>
+<br>
+<button class="button_getstarted">Get started</button>
+<button class="button_download">Download</button>
+<button class="button_apply">Apply on company website</button>
+<button class="button_save">Save</button>
+<br>
+<br>
+<br>
+<br>
+<a class="back_to_amazon" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi21MHzhLD8AhUInUsFHYdfCycYABAAGgJzZg&ae=2&ohost=www.google.co.in&cid=CAESbOD2wmYZ6QUvaMG3jFgpfM6-1H6hFAJWh9HpHRMLJx-rgcMc-eG8I-AOoMEpWxdEB8k2ZYnseENhFXsoGAWVoW23zTtRXOK_qlGj3vbWZtFZveZGyYwueH__by4zlod5ka_VhJK98J1isIUudQ&sig=AOD64_1_Z7SeBycgLaBd4D2Xyz9kLZFr6Q&q&adurl&ved=2ahUKEwj9jbnzhLD8AhUyg2MGHVO9DDoQ0Qx6BAgIEAE&nis=8&dct=1" target="_blank">Back to Amazon</a>
+<br>
+<p style="font-size: large;font-weight: bold;">Nike Black Running Shoes</p>
+<p style="color: rgb(0, 118, 0);">
+    $39 - in stock.
+</p>
+<p>
+    Free delivery tomorrow.
+</p>
+<button class="button_a_cart">Add to Cart</button>
+<button class="button_buy">Buy now</button>
