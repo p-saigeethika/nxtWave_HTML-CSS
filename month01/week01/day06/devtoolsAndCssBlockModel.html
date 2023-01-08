@@ -1,380 +1,392 @@
-<style>
-    .button_request{
-        background-color: black;
-        color: white;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        border: solid;
-        margin-right: 50px;
-        margin-left: 30px;
-        transition: opacity 0.15s,
-                    box-shadow 0.15s,
-                    background-color 0.15s,
-                    color 0.15s,
-                    padding 0.7s;
-                   
-    }
-    .button_request:hover{
-        opacity: 0.7;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-        background-color: white;
-        color: black;
-        padding-left: 21px;
-        padding-right: 21px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-right: 60px;
-        margin-left: 40px;
-
-    }
-    .button_request:active{
-        opacity: 0.4;
-        margin-left:40px;
-        margin-top: 10px;
-    }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Tool &CSS Block Model</title>
+</head>
+<body>
+    <style>
+        .button_request{
+            background-color: black;
+            color: white;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border: solid;
+            margin-right: 50px;
+            margin-left: 30px;
+            transition: opacity 0.15s,
+                        box-shadow 0.15s,
+                        background-color 0.15s,
+                        color 0.15s,
+                        padding 0.7s;
+                       
+        }
+        .button_request:hover{
+            opacity: 0.7;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+            background-color: white;
+            color: black;
+            padding-left: 21px;
+            padding-right: 21px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-right: 60px;
+            margin-left: 40px;
     
-    .button_cart{
-        background-color:rgb(255, 216, 20);
-        color:black;
-        border: none;
-        border-radius: 18px;
-        margin-right: 50px;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        transition: opacity 0.15s,
-                    box-shadow 0.15s,
-                    padding 0.7s;
+        }
+        .button_request:active{
+            opacity: 0.4;
+            margin-left:40px;
+            margin-top: 10px;
+        }
         
-    }
-    .button_cart:hover{
-        opacity: 0.7;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-        padding-left: 21px;
-        padding-right: 21px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-right: 60px;
+        .button_cart{
+            background-color:rgb(255, 216, 20);
+            color:black;
+            border: none;
+            border-radius: 18px;
+            margin-right: 50px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: opacity 0.15s,
+                        box-shadow 0.15s,
+                        padding 0.7s;
+            
+        }
+        .button_cart:hover{
+            opacity: 0.7;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+            padding-left: 21px;
+            padding-right: 21px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            margin-right: 60px;
+            margin-left: 10px;
+    
+        }
+        .button_cart:active{
+            opacity: 0.4;
+            margin-left:10px;
+            margin-top: 10px;
+        }
+        .button_signup{
+            background-color:rgb(46, 164, 79);
+            color:white;
+            border: none;
+            border-radius: 4px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: opacity 0.15s,
+                        box-shadow 0.15s,
+                        background-color 0.15s,
+                        color 0.15s,
+                        padding 0.7s;
+            
+        }
+        .button_signup:hover{
+            opacity: 0.7;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+            background-color: white;
+            color:rgb(46, 164, 79);
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+    
+        }
+        .button_signup:active{
+            opacity: 0.4;
+            margin-left:10px;
+            margin-top: 10px;
+        }
+        .button_getstarted{
+            background-color:rgb(121, 82, 179);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-right: 20px;
+            margin-left: 30px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: opacity 0.15s,
+                        box-shadow 0.15s,
+                        background-color 0.15s,
+                        color 0.15s,
+                        padding 0.7s;
+            vertical-align: top;
+        }
+        .button_getstarted:hover{
+            opacity: 0.7;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+            background-color: white;
+            color: rgb(121, 82, 179);
+            padding-left: 21px;
+            padding-right: 21px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            
+        }
+        .button_getstarted:active{
+            opacity: 0.4;
+            margin-left:40px;
+            margin-top: 10px;
+        }
+        .button_download{
+            background-color:rgb(203, 207, 210);
+            color:rgb(108, 117, 125);
+            height: 36px;
+            width: 120px;
+            border: none;
+            border-radius: 4px;
+            border-right: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: opacity 0.15s,
+                        box-shadow 0.15s,
+                        padding 0.7s,
+                        background-color 0.15s,
+                        color 0.15s; 
+            vertical-align: top;   
+        }
+        .button_download:hover{
+            opacity: 0.7;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 15px;
+            padding-bottom: 27px;
+        }
+        .button_download:active{
+            opacity: 0.4;
+            margin-left:10px;
+            margin-top: 10px;
+        }
+        .button_apply{
+            background-color:rgb(10, 102, 194);
+            color:white;
+            border: none;
+            border-radius: 18px;
+            margin-right: 20px;
+            margin-left: 70px;
+            padding-left: 50px;
+            padding-right: 45px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: opacity 0.15s,
+                        box-shadow 0.15s,
+                        background-color 0.15s,
+                        color 0.15s,
+                        padding 0.7s;
+        }
+        .button_apply:hover{
+            opacity: 0.7;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+            background-color: white;
+            color: rgb(10, 102, 194);
+            padding-left: 55px;
+            padding-right: 50px;
+            padding-top: 15px;
+            padding-bottom: 13px;
+        }
+        .button_apply:active{
+            opacity: 0.4;
+            margin-left:10px;
+            margin-top: 10px;
+        }
+        .button_save{
+            background-color: white;
+            border-color:rgb(10, 102, 194);
+            color:rgb(10, 102, 194);
+            border: solid;
+            border-radius: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: opacity 0.15s,
+                        box-shadow 0.15s,
+                        background-color 0.15s,
+                        color 0.15s,
+                        padding 0.7s;
+        }
+        .button_save:hover{
+            opacity: 1;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+            background-color: rgb(10, 102, 194);
+            color: white;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .button_save:active{
+            opacity: 0.4;
+            margin-left:10px;
+            margin-top: 10px;
+        }
+        .button_a_cart{
+            background-color:rgb(255, 216, 20);
+            color:black;
+            border: none;
+            border-radius: 18px;
+            margin-right: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: opacity 0.15s,
+                        box-shadow 0.15s,
+                        background-color 0.15s,
+                        color 0.15s,
+                        padding 0.7s;
+        }
+        .button_a_cart:hover{
+            opacity: 0.7;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+            padding-left: 21px;
+            padding-right: 21px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .button_a_cart:active{
+            opacity: 0.4;
+            margin-left:10px;
+            margin-top: 10px;
+        }
+        .button_buy{
+            background-color:rgb(255, 164, 28);
+            color:black;
+            border: none;
+            border-radius: 18px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: opacity 0.15s,
+                        box-shadow 0.15s,
+                        background-color 0.15s,
+                        color 0.15s,
+                        padding 0.7s;
+        } 
+        .button_buy:hover{
+            opacity: 0.7;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        .button_buy:active{
+            opacity: 0.4;
+            margin-left:10px;
+            margin-top: 10px;
+        }
+        .back_to_amazon{
+            color:rgb(24, 226, 209);
+            transition: opacity 0.15s,
+                        box-shadow 0.15s;
+        }
+        .back_to_amazon:hover{
+            opacity: 0.7;
+            box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+        }
+        .back_to_amazon:active{
+            opacity: 0.4;
+        }
+        .button-back{
+            margin-right:15px;
+        }
+     
+        
+      .stretch-button {
+        background-color: green;
+        color: white;
+        border: none;
+        font-size: 18px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        cursor: pointer;
+    
+        padding-left: 15px;
+        padding-right: 15px;
         margin-left: 10px;
-
-    }
-    .button_cart:active{
-        opacity: 0.4;
-        margin-left:10px;
-        margin-top: 10px;
-    }
-    .button_signup{
-        background-color:rgb(46, 164, 79);
-        color:white;
-        border: none;
-        border-radius: 4px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        transition: opacity 0.15s,
-                    box-shadow 0.15s,
-                    background-color 0.15s,
-                    color 0.15s,
-                    padding 0.7s;
-        
-    }
-    .button_signup:hover{
-        opacity: 0.7;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-        background-color: white;
-        color:rgb(46, 164, 79);
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-
-    }
-    .button_signup:active{
-        opacity: 0.4;
-        margin-left:10px;
-        margin-top: 10px;
-    }
-    .button_getstarted{
-        background-color:rgb(121, 82, 179);
-        color: white;
-        border: none;
-        border-radius: 4px;
-        margin-right: 20px;
-        margin-left: 30px;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        transition: opacity 0.15s,
-                    box-shadow 0.15s,
-                    background-color 0.15s,
-                    color 0.15s,
-                    padding 0.7s;
-        vertical-align: top;
-    }
-    .button_getstarted:hover{
-        opacity: 0.7;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-        background-color: white;
-        color: rgb(121, 82, 179);
-        padding-left: 21px;
-        padding-right: 21px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        
-    }
-    .button_getstarted:active{
-        opacity: 0.4;
-        margin-left:40px;
-        margin-top: 10px;
-    }
-    .button_download{
-        background-color:rgb(203, 207, 210);
-        color:rgb(108, 117, 125);
-        height: 36px;
-        width: 120px;
-        border: none;
-        border-radius: 4px;
-        border-right: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        transition: opacity 0.15s,
-                    box-shadow 0.15s,
-                    padding 0.7s,
-                    background-color 0.15s,
-                    color 0.15s; 
-        vertical-align: top;   
-    }
-    .button_download:hover{
-        opacity: 0.7;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 15px;
-        padding-bottom: 27px;
-    }
-    .button_download:active{
-        opacity: 0.4;
-        margin-left:10px;
-        margin-top: 10px;
-    }
-    .button_apply{
-        background-color:rgb(10, 102, 194);
-        color:white;
-        border: none;
-        border-radius: 18px;
-        margin-right: 20px;
-        margin-left: 70px;
-        padding-left: 50px;
-        padding-right: 45px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        transition: opacity 0.15s,
-                    box-shadow 0.15s,
-                    background-color 0.15s,
-                    color 0.15s,
-                    padding 0.7s;
-    }
-    .button_apply:hover{
-        opacity: 0.7;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-        background-color: white;
-        color: rgb(10, 102, 194);
-        padding-left: 55px;
-        padding-right: 50px;
-        padding-top: 15px;
-        padding-bottom: 13px;
-    }
-    .button_apply:active{
-        opacity: 0.4;
-        margin-left:10px;
-        margin-top: 10px;
-    }
-    .button_save{
-        background-color: white;
-        border-color:rgb(10, 102, 194);
-        color:rgb(10, 102, 194);
-        border: solid;
-        border-radius: 18px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        transition: opacity 0.15s,
-                    box-shadow 0.15s,
-                    background-color 0.15s,
-                    color 0.15s,
-                    padding 0.7s;
-    }
-    .button_save:hover{
-        opacity: 1;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-        background-color: rgb(10, 102, 194);
-        color: white;
-        padding-left: 25px;
-        padding-right: 25px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    .button_save:active{
-        opacity: 0.4;
-        margin-left:10px;
-        margin-top: 10px;
-    }
-    .button_a_cart{
-        background-color:rgb(255, 216, 20);
-        color:black;
-        border: none;
-        border-radius: 18px;
         margin-right: 10px;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        transition: opacity 0.15s,
-                    box-shadow 0.15s,
-                    background-color 0.15s,
-                    color 0.15s,
-                    padding 0.7s;
-    }
-    .button_a_cart:hover{
-        opacity: 0.7;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-        padding-left: 21px;
-        padding-right: 21px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    .button_a_cart:active{
-        opacity: 0.4;
-        margin-left:10px;
-        margin-top: 10px;
-    }
-    .button_buy{
-        background-color:rgb(255, 164, 28);
-        color:black;
-        border: none;
-        border-radius: 18px;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        transition: opacity 0.15s,
-                    box-shadow 0.15s,
-                    background-color 0.15s,
-                    color 0.15s,
-                    padding 0.7s;
-    } 
-    .button_buy:hover{
-        opacity: 0.7;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
+    
+        transition: padding 0.15s,
+          margin 0.15s;
+      }
+    
+      .stretch-button:hover {
         padding-left: 25px;
         padding-right: 25px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-    .button_buy:active{
-        opacity: 0.4;
-        margin-left:10px;
-        margin-top: 10px;
-    }
-    .back_to_amazon{
-        color:rgb(24, 226, 209);
-        transition: opacity 0.15s,
-                    box-shadow 0.15s;
-    }
-    .back_to_amazon:hover{
-        opacity: 0.7;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.2);
-    }
-    .back_to_amazon:active{
-        opacity: 0.4;
-    }
-    .button-back{
-        margin-right:15px;
-    }
- 
-    
-  .stretch-button {
-    background-color: green;
-    color: white;
-    border: none;
-    font-size: 18px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    cursor: pointer;
-
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    transition: padding 0.15s,
-      margin 0.15s;
-  }
-
-  .stretch-button:hover {
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-</style>
-<br>
-<br>
-<button class="button_request">Request now</button>
-<button class="button_cart">Add to Cart</button>
-<button class="button_signup">Sign up</button>
-<br>
-<br>
-<br>
-<br>
-<button class="button_getstarted">Get started</button>
-<button class="button_download">Download</button>
-<button class="button_apply">Apply on company website</button>
-<button class="button_save">Save</button>
-<br>
-<br>
-<br>
-<br>
-<a class="back_to_amazon" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi21MHzhLD8AhUInUsFHYdfCycYABAAGgJzZg&ae=2&ohost=www.google.co.in&cid=CAESbOD2wmYZ6QUvaMG3jFgpfM6-1H6hFAJWh9HpHRMLJx-rgcMc-eG8I-AOoMEpWxdEB8k2ZYnseENhFXsoGAWVoW23zTtRXOK_qlGj3vbWZtFZveZGyYwueH__by4zlod5ka_VhJK98J1isIUudQ&sig=AOD64_1_Z7SeBycgLaBd4D2Xyz9kLZFr6Q&q&adurl&ved=2ahUKEwj9jbnzhLD8AhUyg2MGHVO9DDoQ0Qx6BAgIEAE&nis=8&dct=1" target="_blank">Back to Amazon</a>
-<br>
-<p style="font-size: large;font-weight: bold;">Nike Black Running Shoes</p>
-<p style="color: rgb(0, 118, 0);">
-    $39 - in stock.
-</p>
-<p>
-    Free delivery tomorrow.
-</p>
-<button class="button_a_cart">Add to Cart</button>
-<button class="button_buy">Buy now</button>
-<br>
-<br>
-<br>
-<button class="button-back">Back</button>
-<a href="https://www.google.com/" target="_blank" style="margin-right:5px; color: #4285f4;">1</a>
-<a href="https://www.google.com/" target="_blank" style="margin-right:5px; color: #4285f4;">2</a>
-<a href="https://www.google.com/" target="_blank" style="margin-right:5px; color: #4285f4;">3</a>
-<a href="https://www.google.com/" target="_blank" style="margin-right:5px; color: #4285f4;">4</a>
-<a href="https://www.google.com/" target="_blank" style="color: #4285f4;">5</a>
-<button style="margin-left: 15px;">Next</button>
-
-    
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+    </style>
     <br>
     <br>
-<button class="stretch-button">
-        One
-</button>
-<button class="stretch-button">
-        Two
-</button>
-<button class="stretch-button">
-        Three
-</button>
-
+    <button class="button_request">Request now</button>
+    <button class="button_cart">Add to Cart</button>
+    <button class="button_signup">Sign up</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button class="button_getstarted">Get started</button>
+    <button class="button_download">Download</button>
+    <button class="button_apply">Apply on company website</button>
+    <button class="button_save">Save</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a class="back_to_amazon" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi21MHzhLD8AhUInUsFHYdfCycYABAAGgJzZg&ae=2&ohost=www.google.co.in&cid=CAESbOD2wmYZ6QUvaMG3jFgpfM6-1H6hFAJWh9HpHRMLJx-rgcMc-eG8I-AOoMEpWxdEB8k2ZYnseENhFXsoGAWVoW23zTtRXOK_qlGj3vbWZtFZveZGyYwueH__by4zlod5ka_VhJK98J1isIUudQ&sig=AOD64_1_Z7SeBycgLaBd4D2Xyz9kLZFr6Q&q&adurl&ved=2ahUKEwj9jbnzhLD8AhUyg2MGHVO9DDoQ0Qx6BAgIEAE&nis=8&dct=1" target="_blank">Back to Amazon</a>
+    <br>
+    <p style="font-size: large;font-weight: bold;">Nike Black Running Shoes</p>
+    <p style="color: rgb(0, 118, 0);">
+        $39 - in stock.
+    </p>
+    <p>
+        Free delivery tomorrow.
+    </p>
+    <button class="button_a_cart">Add to Cart</button>
+    <button class="button_buy">Buy now</button>
+    <br>
+    <br>
+    <br>
+    <button class="button-back">Back</button>
+    <a href="https://www.google.com/" target="_blank" style="margin-right:5px; color: #4285f4;">1</a>
+    <a href="https://www.google.com/" target="_blank" style="margin-right:5px; color: #4285f4;">2</a>
+    <a href="https://www.google.com/" target="_blank" style="margin-right:5px; color: #4285f4;">3</a>
+    <a href="https://www.google.com/" target="_blank" style="margin-right:5px; color: #4285f4;">4</a>
+    <a href="https://www.google.com/" target="_blank" style="color: #4285f4;">5</a>
+    <button style="margin-left: 15px;">Next</button>
+    
+        
+        <br>
+        <br>
+    <button class="stretch-button">
+            One
+    </button>
+    <button class="stretch-button">
+            Two
+    </button>
+    <button class="stretch-button">
+            Three
+    </button>
+    
+    
+</body>
+</html>
