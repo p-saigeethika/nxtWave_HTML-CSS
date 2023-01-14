@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+       .main-background {
+            border: solid;
+            border-width: 8px;
+            border-color: #0967d219;
+        }
+
+        .top-card {
+            height: 13vh;
+            margin: 20px;
+        }
+
+        .top-sub-card {
+            font-family: Roboto;
+        }
+
+        .top-card-para {
+            font-size: 20px;
+            width: 230px;
+            color: #323f4b;
+            margin-bottom: 10px;
+            line-height: 26px;
+            font-weight: 500;
+        }
+
+        .top-card-image {
+            width: 140px;
+            height: 90px;
+        }
+
+        .top-button {
+            font-size: 12px;
+            border-radius: 7px;
+            background-color: #0967d2;
+
+        }
+
+        .second-card {
+            padding: 20px;
+            border-width: 0px;
+            border-radius: 8px;
+            background-color: #0967d219;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            margin-right: 20px;
+        }
+
+        .covid-image {
+            width: 60px;
+            height: 60px;
+        }
+
+        .covid-card {
+            font-family: Roboto;
+            margin-left: 20px;
+        }
+
+        .covid-test-para {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .covid-para {
+            font-size: 12px;
+            width: 250px;
+            color: #707070;
+        }
+
+        .symptoms-para {
+            font-family: Roboto;
+            font-size: 18px;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        .symptoms-card {
+            font-family: Roboto;
+            margin-left: 20px;
+            margin-top: 22px;
+            margin-bottom: 25px;
+        }
+
+        .dry-cough-card {
+            padding: 15px;
+            padding-bottom: 0px;
+            border-width: 0px;
+            border-radius: 8px;
+            background-color: #3ebd93;
+            margin-right: 15px;
+        }
+
+        .dry-cough-img {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+        }
+
+
+        .dry-cough-para {
+            font-size: 12px;
+            color: white;
+            padding-left: 11px;
+
+        }
+
+        .high-fever-card {
+            padding: 15px;
+            padding-bottom: 0px;
+            border-width: 0px;
+            border-radius: 8px;
+            background-color: #e668a7;
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+
+        .high-fever-img {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+        }
+
+
+        .high-fever-para {
+            font-size: 12px;
+            color: white;
+            padding-left: 11px;
+
+        }
+
+        .headache-card {
+            padding: 15px;
+            padding-bottom: 0px;
+            border-width: 0px;
+            border-radius: 8px;
+            background-color: #a368fc;
+            margin-left: 15px;
+        }
+
+        .headache-img {
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+        }
+
+
+        .headache-para {
+            font-size: 12px;
+            color: white;
+            padding-left: 11px;
+
+        }
+
+        .video-para {
+            font-family: Roboto;
+            font-size: 18px;
+            margin-left: 20px;
+            font-weight: 500;
+        }
+
+        .bottom-card {
+            background-color: #e12d3919;
+            margin-left: 20px;
+            margin-bottom: 20px;
+            margin-top: 15px;
+            margin-right: 20px;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        .bottom-card-img {
+            width: 80px;
+            height: 90px;
+            margin-left: 10px;
+        }
+
+        .prevent-card {
+            margin-left: 15px;
+            font-family: Roboto;
+        }
+
+        .prevent-card-heading {
+            font-size: 18px;
+        }
+
+        .prevent-card-para {
+            font-size: 12px;
+            width: 250px;
+            color: #707070;
+        }
+
+        .prevent-card-button {
+            border-width: 0px;
+            border-radius: 9px;
+            background-color: #0967d2;
+            font-size: 12px;
+        } 
+    </style>
+    <div class="main-background">
+        <div class="top-card d-flex flex-row">
+            <div class="top-sub-card">
+                <p class="top-card-para">All you need to know about COVID-19</p>
+                <button class="top-button btn btn-primary">Know more</button>
+            </div>
+            <img class="top-card-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/medicalcare-img.png" />
+        </div>
+        <div class="second-card d-flex flex-row">
+            <img class="covid-image" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/coronavirus-img.png" />
+            <div class="covid-card">
+                <p class="covid-test-para">COVID-19 Test</p>
+                <p class="covid-para">If you think you have been exposed to novel coronavirus (COVID-19)more</p>
+            </div>
+        </div>
+        <p class="symptoms-para">Symptoms</p>
+        <div class=" symptoms-card d-flex flex-row">
+            <div class="dry-cough-card">
+                <img class="dry-cough-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/cough-img.png" />
+                <p class="dry-cough-para">Dry Cough</p>
+            </div>
+            <div class="high-fever-card">
+                <img class="high-fever-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/fever-img.png" />
+                <p class="high-fever-para">High Fever</p>
+            </div>
+            <div class="headache-card">
+                <img class="headache-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/headache-img.png" />
+                <p class="headache-para">Headache</p>
+            </div>
+        </div>
+        <p class="video-para">Videos</p>
+        <div class="bottom-card d-flex flex-row">
+            <img class="bottom-card-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/doctor-img.png" />
+            <div class="prevent-card">
+                <h1 class="prevent-card-heading">To prevent the spread of ...</h1>
+                <p class="prevent-card-para">If you think you have been exposed to novel corona virus (COVID-19)</p>
+                <button class="prevent-card-button btn btn-primary">Watch Video</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
