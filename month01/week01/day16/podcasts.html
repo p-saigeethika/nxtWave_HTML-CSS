@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+        .background-img {
+            height: 60vh;
+            width: 100vw;
+            background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/podcasts-bg.png');
+            background-size: cover;
+        }
+
+        .background-heading {
+            padding: 30px;
+            color: #ffffff;
+            font-size: 30px;
+            font-family: Roboto;
+        }
+
+        .home-main-card {
+            margin: 30px;
+        }
+
+        .puri-card {
+            text-align: center;
+            font-family: Roboto;
+            line-height: 8px;
+            margin-right: 30px;
+        }
+
+        .puri-img {
+            height: 115px;
+            width: 160px;
+            border-radius: 6px;
+        }
+
+        .puri-align {
+            padding-top: 6px;
+        }
+
+        .puri-main-heading {
+            font-size: 15px;
+            color: #151765;
+            font-weight: bold;
+        }
+
+        .puri-main-para {
+            font-size: 14px;
+            color: #5a7184;
+        }
+
+        .tedx-card {
+            text-align: center;
+            font-family: Roboto;
+            line-height: 8px;
+            margin-left: 20px;
+        }
+
+        .sub-card {
+            margin-top: 20px;
+        }
+
+        .background-puri {
+            background-color: #151765;
+            padding: 25px;
+        }
+
+        .puri-sub-heading {
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: bold;
+            width: 200px;
+        }
+
+        .puri-top-card {
+            margin-left: 10px;
+        }
+
+        .background-sub-puri {
+            background-color: #ffffff;
+            padding: 25px;
+        }
+
+        .puri-sub1-heading {
+            font-size: 16px;
+            color: #151765;
+            font-weight: bold;
+            width: 200px;
+        }
+
+        .puri-sub2-heading {
+            font-size: 12px;
+            color: #151765;
+            font-weight: bold;
+            width: 200px;
+        }
+
+        .puri-main1-para {
+            font-size: 14px;
+            color: #5a7184;
+            width: 180px;
+        }
+
+        .sub-button {
+            background-color: #151765;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 19px;
+
+        }
+    </style>
+    <div id="sectionHome">
+        <div class="background-img">
+            <h1 class="background-heading">Podcasts</h1>
+        </div>
+        <div class="home-main-card">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="puri-card" onclick="display('sectionPuri')">
+                    <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" />
+                    <div class="puri-align">
+                        <h1 class="puri-main-heading">Puri jagannadh</h1>
+                        <p class="puri-main-para">24 Episodes</p>
+                    </div>
+                </div>
+                <div class="tedx-card" onclick="display('sectionTedx')">
+                    <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" />
+                    <div class="puri-align">
+                        <h1 class="puri-main-heading">Tedx talks</h1>
+                        <p class="puri-main-para">12 Episodes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-card d-flex flex-row justify-content-center">
+                <div class="puri-card" onclick="display('sectionSadhguru')">
+                    <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" />
+                    <div class="puri-align">
+                        <h1 class="puri-main-heading">Sadhguru</h1>
+                        <p class="puri-main-para">49 Episodes</p>
+                    </div>
+                </div>
+                <div class="tedx-card" onclick="display('sectionOnpurpose')">
+                    <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" />
+                    <div class="puri-align">
+                        <h1 class="puri-main-heading">On purpose</h1>
+                        <p class="puri-main-para">49 Episodes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionPuri">
+        <div class="background-puri">
+            <div class="d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" />
+                <div class="puri-top-card">
+                    <p class="puri-main-para">Podcast</p>
+                    <h1 class="puri-sub-heading">Puri Jagannadh Podcast</h1>
+                    <p class="puri-main-para">The Puri Jagannadh Podcast</p>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">Molecular Gastronomy</h1>
+                    <p class="puri-main1-para">Anything happens there it will not cook, ...</p>
+                    <h1 class="puri-sub2-heading">15 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">Mysterious book</h1>
+                    <p class="puri-main1-para">The Voynich manuscript is the 15th century book.</p>
+                    <h1 class="puri-sub2-heading">12 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">Predator Drone</h1>
+                    <p class="puri-main1-para">The most power full drone. It is 10 feet height..</p>
+                    <h1 class="puri-sub2-heading">10 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/puri-jagannadh-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">Paella</h1>
+                    <p class="puri-main1-para">The national dish of spain. It was first star...</p>
+                    <h1 class="puri-sub2-heading">6 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn btn-primary sub-button" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+    <div id="sectionTedx">
+        <div class="background-puri">
+            <div class="d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" />
+                <div class="puri-top-card">
+                    <p class="puri-main-para">Podcast</p>
+                    <h1 class="puri-sub-heading">The Tedx podcast</h1>
+                    <p class="puri-main-para">The Tedx podcast</p>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">The science of friction</h1>
+                    <p class="puri-main1-para">Tribology: It's a funny sounding word you might.</p>
+                    <h1 class="puri-sub2-heading">12 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">Unleash you</h1>
+                    <p class="puri-main1-para">What can we learn from the world's most enduringly...</p>
+                    <h1 class="puri-sub2-heading">8 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">3 psychological tricks</h1>
+                    <p class="puri-main1-para">We all want to save more money - but overall, ...</p>
+                    <h1 class="puri-sub2-heading">10 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tedx-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">The case for stubborn</h1>
+                    <p class="puri-main1-para">This decade is a moment of choice unlike any we...</p>
+                    <h1 class="puri-sub2-heading">12 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn btn-primary sub-button" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+    <div id="sectionSadhguru">
+        <div class="background-puri">
+            <div class="d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" />
+                <div class="puri-top-card">
+                    <p class="puri-main-para">Podcast</p>
+                    <h1 class="puri-sub-heading">The Sadhguru podcast</h1>
+                    <p class="puri-main-para">The Sadhguru podcast</p>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">Head or heart</h1>
+                    <p class="puri-main1-para">Sadhguru shares his wisdom on how to make...</p>
+                    <h1 class="puri-sub2-heading">16 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">How to equip yourself</h1>
+                    <p class="puri-main1-para">Society and human interactions are going...</p>
+                    <h1 class="puri-sub2-heading">13 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">How not to get irritated</h1>
+                    <p class="puri-main1-para">How do you see an unpleasant spouse the...</p>
+                    <h1 class="puri-sub2-heading">15 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/sadhguru-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">Isha Kriya</h1>
+                    <p class="puri-main1-para">Rooted in the timeless wisdom if the yogic...</p>
+                    <h1 class="puri-sub2-heading">16 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn btn-primary sub-button" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+    <div id="sectionOnpurpose">
+        <div class="background-puri">
+            <div class="d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" />
+                <div class="puri-top-card">
+                    <p class="puri-main-para">Podcast</p>
+                    <h1 class="puri-sub-heading">On Purpose with Jay</h1>
+                    <p class="puri-main-para">The Jay Shetty podcast</p>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">Patrick Bet David</h1>
+                    <p class="puri-main1-para">Are you an entrepreneur or have dreams of mental.</p>
+                    <h1 class="puri-sub2-heading">10 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">5 Techniques to cope</h1>
+                    <p class="puri-main1-para">Does anxiety looms around every corner of your...</p>
+                    <h1 class="puri-sub2-heading">4 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">Radhanath Swami ON</h1>
+                    <p class="puri-main1-para">World-renowned spritual leader and philanthropist..</p>
+                    <h1 class="puri-sub2-heading">12 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="background-sub-puri">
+            <div class="first-card d-flex flex-row">
+                <img class="puri-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/on-purpose-img.png" />
+                <div class="puri-top-card">
+                    <h1 class="puri-sub1-heading">3 Ways to let go</h1>
+                    <p class="puri-main1-para">Do the opinions of others veer you from the core.</p>
+                    <h1 class="puri-sub2-heading">13 min</h1>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <button class="btn btn-primary sub-button" onclick="display('sectionHome')">Back</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
