@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+        .my-background {
+            background-color: #ffffff;
+            padding: 25px;
+            font-family: Bree Serif;
+        }
+
+        .my-img {
+            height: 180px;
+            width: 280px;
+            margin-left: 160px;
+        }
+
+        .my-heading {
+            font-size: 28px;
+            color: ＃183556;
+        }
+
+        .my-para {
+            font-size: 12px;
+            color: #616e7c;
+            width: 300px;
+            margin-left: 155px;
+        }
+
+        .home-images-card {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .main-align {
+            text-align: center;
+        }
+
+        .man-img {
+            height: 150px;
+            width: 250px;
+        }
+
+        .upper-imgs-card {
+            margin-top: 10px;
+            margin-bottom: 25px;
+        }
+
+        .man-margin {
+            margin-right: 10px;
+        }
+
+        .diwali-margin {
+            margin-left: 10px;
+        }
+
+        .diwali-main-heading {
+            font-family: "Caveat";
+            font-size: 40px;
+
+            width: 250px;
+            color: #ffffff;
+            padding: 30px;
+        }
+
+        .diwali-background {
+            background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-bg.png');
+            height: 250px;
+            width: 500px;
+            background-size: cover;
+        }
+
+        .back-button {
+            font-size: 13px;
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .diwali-bottom-background {
+            background-color: #e6f6ff;
+            padding: 30px;
+        }
+
+        .air-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            border-width: 0px;
+            padding: 20px;
+            text-align: center;
+            font-family: Roboto;
+            height: 170px;
+            width: 180px;
+            line-height: 10px;
+            margin-right: 10px;
+        }
+
+        .air-size {
+            height: 70px;
+            width: 70px;
+        }
+
+        .air-para1 {
+            font-size: 13px;
+            color: #616e7c;
+        }
+
+        .air-para2 {
+            font-size: 15px;
+            color: #323f4b;
+            padding-top: 0px;
+        }
+
+        .lamp-card {
+            margin-left: 10px;
+        }
+
+        .sparkle-margin {
+            margin-top: 20px;
+        }
+
+        .background-container {
+            background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/arvrbg.png');
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+        }
+
+        .card-container {
+            background-color: #ffffff;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            padding: 25px;
+        }
+
+        .main-heading {
+            color: #5752ab;
+            font-family: Bree Serif;
+            font-size: 28px;
+        }
+
+        .paragraph {
+            color: #323f4b;
+            font-family: Roboto;
+            font-size: 15px;
+            width: 300px;
+        }
+
+        .learn-button {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 11px;
+            padding-left: 33px;
+            padding-right: 32px;
+            font-size: 13px;
+            margin-right: 12px;
+            border-width: 1px;
+            color: #171f46;
+            border-color: #d7dfe9;
+            border-style: solid;
+        }
+
+        .save-button {
+            background-color: #5752ab;
+            border-radius: 8px;
+            padding: 11px;
+            padding-left: 32px;
+            padding-right: 32px;
+            font-size: 12px;
+            color: #ffffff;
+            border-width: 0px;
+            font-size: 13px;
+            margin-left: 3px;
+        }
+
+        .backgroung-container {
+            background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/newsbg.png');
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+        }
+
+        .card-container {
+            background-color: #ffffff;
+            padding: 30px;
+            font-family: Roboto;
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+        }
+
+        .main-paragraph {
+            font-size: 11px;
+            color: #7b8794;
+        }
+
+        .main-heading {
+            font-size: 16px;
+            color: #323f4b;
+            width: 280px;
+        }
+
+        .sub-paragraph {
+            font-size: 11px;
+            color: #7b8794;
+            width: 290px;
+        }
+
+        .button {
+            color: #ffffff;
+            background-color: #323f4b;
+            padding: 10px;
+            padding-left: 28px;
+            padding-right: 28px;
+            border-radius: 9px;
+            border-width: 0px;
+            font-size: 13px;
+        }
+
+        .background-image {
+            background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/foodbg.png');
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+        }
+
+        .background-card {
+            background-color: #f6c56e;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            color: #323f4b;
+            padding: 20px;
+        }
+
+        .main-heading {
+            font-family: Bree Serif;
+        }
+
+        .para {
+            font-family: Roboto;
+            width: 300px;
+        }
+
+        .book-button {
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            font-size: 13px;
+            padding-left: 26px;
+            padding-right: 26px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+
+        .button-font {
+            font-size: 13px;
+            margin-left: 10px;
+        }
+    </style>
+    <div class="my-background " id="sectionMyprojects">
+        <div class="d-flex flex-column justify-content-center main-align">
+            <img class="my-img" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/software-developer-img.png" />
+            <h1 class="my-heading">My Projects</h1>
+            <p class="my-para"> These are a few of my static Website projects that I have developed using HTML, CSS and Bootstrap</p>
+        </div>
+        <div class="home-images-card">
+            <div class="d-flex flex-row justify-content-center upper-imgs-card">
+                <img class="man-img man-margin" onclick="display('sectionTech')" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/advanced-technologies-img.png" />
+                <img class="man-img diwali-margin" onclick="display('sectionDiwali')" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diwali-img.png" />
+            </div>
+            <div class="d-flex flex-row justify-content-center upper-imgs-card">
+                <img class="man-img man-margin" onclick="display('sectionFood')" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/food-img.png" />
+                <img class="man-img diwali-margin" onclick="display('sectionNews')" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/news-paper-img.png" />
+            </div>
+        </div>
+    </div>
+    <div id="sectionTech">
+        <div class="background-container d-flex flex-column justify-content-end">
+            <div class="card-container">
+                <h1 class="main-heading">Advanced Technologies</h1>
+                <p class="paragraph">Machinery and equipment developed from the application of scientific knowledge.</p>
+                <button class="learn-button">Learn more</button>
+                <button class="btn btn-primary button-font" onclick="display('sectionMyprojects')">Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionDiwali">
+        <div class="diwali-background">
+            <h1 class="diwali-main-heading">Celebrate Diwali with your friends</h1>
+        </div>
+        <div class="diwali-bottom-background">
+            <div class="d-flex flex-row justify-content-center">
+                <div class="air-card ">
+                    <img class="air-size" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/lamp-img.png" />
+                    <p class="air-para1">Diwali Air Balloon</p>
+                    <p class="air-para2">Rs 369</p>
+                </div>
+                <div class="air-card lamp-card">
+                    <img class="air-size" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/diya-img.png" />
+                    <p class="air-para1">Diwali-Lamp</p>
+                    <p class="air-para2">Rs 50</p>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center sparkle-margin">
+                <div class="air-card ">
+                    <img class="air-size" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firework-img.png" />
+                    <p class="air-para1">Sparklers</p>
+                    <p class="air-para2">Rs 150</p>
+                </div>
+                <div class="air-card lamp-card">
+                    <img class="air-size" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/firecracker-img.png" />
+                    <p class="air-para1">Fire Cracker</p>
+                    <p class="air-para2">Rs 560</p>
+                </div>
+            </div>
+            <div class="back-button">
+                <button class="btn btn-primary" onclick="display('sectionMyprojects')">Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionFood">
+        <div class="background-image d-flex flex-column justify-content-end">
+            <div class="background-card">
+                <h1 class="main-heading">Happy Meals </h1>
+                <p class="para">Discover the best foods over the 1,000 restaurants</p>
+                <button class="book-button">Book Now</button>
+                <button class="btn btn-primary button-font" onclick="display('sectionMyprojects')">Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionNews">
+        <div class="backgroung-container d-flex flex-column justify-content-end">
+            <div class="card-container">
+                <h1 class="main-paragraph">NEWS OF THE DAY</h1>
+                <p class="main-heading">iB Cricket announces world's first Virtual Reality Cricket League</p>
+                <p class="sub-paragraph">iB Cricket and Viu together have announced the World's first virtual reality cricket league featuring 12 international cricketers, who will be competing against each other for the iB Cricket Super Over League title in Mumbai. Iconic cricketers like Virender Sehwag, Suresh Raina, Brendon McCullum will be competing in the league.</p>
+                <button class="button">Read more</button>
+                <button class="btn btn-primary button-font" onclick="display('sectionMyprojects')">Back</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
