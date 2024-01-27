@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+        .background {
+            margin-top: 70px;
+            margin-bottom: 600px;
+        }
+
+        .img {
+            height: 200px;
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .bio {
+            height: 50px;
+            width: 50px;
+        }
+
+        .main-back {
+            background-color: #ffffff;
+            height: 100vh;
+            background-size: cover;
+        }
+
+        .main-heading {
+            font-size: 28px;
+            font-weight: normal;
+            line-height: 45px;
+        }
+
+        .line-height {
+            line-height: 20px;
+        }
+
+        .line {
+            width: 0px;
+            height: 0px;
+            margin: 0px;
+        }
+    </style>
+    <div class="main-back">
+        <div class="d-flex flex-row background " id="sectionProfile">
+            <img class="img" src="https://assets.ccbp.in/frontend/static-website/profile-img.png" />
+            <div class="line-height">
+                <h1 class="main-heading">Jenny</h1>
+                <p>Softwere Developer<br /><br />Working at <span class="text-primary">Google</span></p><br />
+                <a href="#sectionBio" target="_blank"><img class="bio" src="https://assets.ccbp.in/frontend/static-website/bio-img.png" /></a>
+            </div>
+        </div>
+
+        <div id="sectionBio">
+            <a href="#sectionProfile" target="_blank">Bio</a>
+            <p>Jenny(born June 10, 1972), is a software developer born in Newyork. She attained an M.S. from Stanford University in materials science and engineering.
+                <hr class="line">She worked in engineering and product management at Applied Materials and in management consulting at McKinsey & Company and joined Vincet in 2020.
+            </p>
+        </div>
+    </div>
+
+</body>
+
+</html>
