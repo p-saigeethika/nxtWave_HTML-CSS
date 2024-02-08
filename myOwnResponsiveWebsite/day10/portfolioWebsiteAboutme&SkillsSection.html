@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+        .first-back {
+            background-color: #323f4b;
+            font-family: Roboto;
+        }
+
+        .facts {
+            font-size: 24px;
+            color: #cced00;
+            font-weight: bold;
+        }
+
+        .about-me {
+            font-size: 38px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .about-me-img {
+            width: 100%;
+        }
+
+        .about-me-para {
+            font-size: 19px;
+            color: #9aa5b1;
+        }
+
+        .line {
+            line-break: 100%;
+        }
+
+        .second-back {
+            background-color: #1f2933;
+            font-family: Roboto;
+
+        }
+
+        .third-back {
+            background-color: #323f4b;
+
+            border-radius: 13px;
+            padding-top: 15px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-bottom: 15px;
+        }
+
+        .html-img {
+            width: 70%;
+        }
+
+        .three-back-html {
+            padding-top: 15px;
+            padding-left: 43px;
+            padding-right: 43px;
+            padding-bottom: 15px;
+        }
+
+        .three-back-js {
+            padding-top: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 22px;
+        }
+
+        .three-back-bs {
+            padding-top: 15px;
+            padding-left: 23px;
+            padding-right: 24px;
+            padding-bottom: 0px;
+            background-color: #323f4b;
+            height: 158px;
+            border-radius: 13px;
+
+        }
+
+        .one {
+            width: 70px;
+            height: 70px;
+
+        }
+
+
+
+        .html-heading {
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: bold;
+            padding-top: 13px;
+        }
+    </style>
+    <div class="container shadow">
+        <div class="row">
+            <div class="first-back pt-5 pb-5 d-flex flex-row">
+                <div class="col-12  col-md-6 order-md-2">
+                    <h1 class="facts pt-3">Facts</h1>
+                    <h1 class="about-me pt-3">About me</h1>
+                    <img class="about-me-img pt-3 d-md-none" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-about-me-img.png" />
+                    <p class="about-me-para pt-4">My name is Jenny Wilson, and I am currently looking for a job in Frontend Development. I have 3 years of experience working as a Frontend Developer. I have a bachelor's degree in Electronics and Communication. People find me to be an upbeat, self-motivated team player with excellent communication skills.
+                        <hr>
+                        <span class="about-me-para">I am a dedicated person with a family of four. I enjoy reading, and the knowledge and perspective that my reading gives me have strengthened my teaching skills and presentation abilities.</span>
+                    </p>
+                </div>
+                <div class="col-12 d-none col-md-6 d-md-inline order-md-1">
+                    <img class="about-me-img pt-3" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-about-me-img.png" />
+                </div>
+            </div>
+            <div class="col-12 second-back pt-5 pb-5">
+                <h1 class="facts pt-3 col-12 ">Skills:</h1>
+                <div class="col-12 col-md-12 d-flex flex-row ">
+                    <div class="third-back three-back-html text-center mr-3 mb-3">
+                        <img class="html-img one" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-html-img.png" />
+                        <h1 class="html-heading">HTML</h1>
+                    </div>
+                    <div class="third-back three-back-js text-center mb-3">
+                        <img class="html-img one" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-css-img.png" />
+                        <h1 class="html-heading">CSS</h1>
+                    </div>
+                    <div class=" text-center three-back-bs ml-3 mr-3 d-none d-md-block">
+                        <img class="html-img one" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-bootstrap-img.png" />
+                        <h1 class="html-heading">Bootstrap</h1>
+                    </div>
+                    <div class="third-back three-back-js text-center mb-3 d-none d-md-block">
+                        <img class="html-img  one" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-js-img.png" />
+                        <h1 class="html-heading">JS</h1>
+                    </div>
+                </div>
+                <div class=" col-12 d-md-none d-flex flex-row">
+                    <div class=" text-center three-back-bs mr-3 ">
+                        <img class="html-img one" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-bootstrap-img.png" />
+                        <h1 class="html-heading">Bootstrap</h1>
+                    </div>
+                    <div class="third-back three-back-js text-center mb-3">
+                        <img class="html-img  one" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/portfolio-skills-js-img.png" />
+                        <h1 class="html-heading">JS</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
