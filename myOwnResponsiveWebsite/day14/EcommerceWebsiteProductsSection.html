@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+        .main-background {
+            background-color: #ffffff;
+            height: 100vh;
+            font-family: Roboto;
+            padding-top: 28px;
+            padding-bottom: 28px;
+        }
+
+        .main-heading {
+            color: #183b56;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .card-background {
+            background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-headphones-bg.png');
+            height: 150%;
+
+            width: 95%;
+            padding: 25px;
+            background-size: cover;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+
+        }
+
+        .card-background-two {
+            background-image: url('https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-products-laptops-bg.png');
+            height: 150%;
+
+            width: 95%;
+            padding: 25px;
+            background-size: cover;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .card-heading {
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .card-para {
+            color: #ffffff;
+            font-size: 14px;
+        }
+
+        .button {
+            color: #ff9f00;
+            font-size: 12px;
+            border-radius: 25px;
+            border-width: 0px;
+        }
+
+        .offers-para {
+            font-size: 18px;
+            color: #ff9f00;
+            margin-top: 120px;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+    <div class="main-background">
+        <div class="container">
+            <div class="row">
+                <h1 class="col-12 main-heading">Our Products</h1>
+                <div class="col-12 col-md-6  mb-4  mt-1 ">
+                    <div class="card-background d-flex flex-column justify-content-end">
+                        <h1 class="card-heading">Smart Headphones</h1>
+                        <p class="card-para">Headphones with Deep Bass,sound,touch...</p>
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light button" data-toggle="modal" data-target="#exampleModal">
+                                View Details
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Sony WH-1000XM4 Noise Cancelling Headphones</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Get Best Smart Headphones Prices Online in India. Select from the best range of Headphones from most popular brands...
+                                                <br /><br>
+                                                <span class="bold">Voice assistant:</span> Alexa, Google Assistant & Siri in Mac<br>
+                                                <span class="bold">Smart Listening:</span>Amblent sound with the best noise cancellation<br>
+
+                                            </p>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary bg-white text-dark" data-dismiss="modal">Buy Now</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6  mb-4">
+                    <div class="card-background-two d-flex flex-column justify-content-end">
+                        <h1 class="card-heading">Laptops</h1>
+                        <p class="card-para">Explore vast selection of Laptops...</p>
+                        <div>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-light button" data-toggle="modal" data-target="#laptop">
+                                View Details
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="laptop" tabindex="-1" aria-labelledby="laptopLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="laptopLabel">Inspiron 14 5490 core i5 Laptop</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Get Best Smart Laptop Prices Online in India. Select from the best range of Laptops from most popular brands...
+                                                <br /><br>
+                                                <span class="bold">Performance:</span> Core i5 3rd Gen, 2.6 Ghz, 4GB RAM<br>
+                                                <span class="bold">Storage:</span>500 GB HDD, SATA, 7200 RPM<br>
+                                                <span class="bold">Battery:</span>Li-Ion, 6 Cell<br>
+                                            </p>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary bg-white text-dark" data-dismiss="modal">Buy Now</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex flex-row justify-content-end">
+                    <p class="offers-para"> See All Offers
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-right-short mr-3" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                        </svg>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
